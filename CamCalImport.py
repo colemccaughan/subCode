@@ -19,6 +19,7 @@ bounds = [(pink_lower,pink_upper), (yellow_lower, yellow_upper), (green_lower, g
 #image = cv2.imread("TestImage.jpg")
 
 #this is a change
+#does SSH work?
 
 #camera setup
 camera = PiCamera()
