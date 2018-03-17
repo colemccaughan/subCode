@@ -18,6 +18,8 @@ bounds = [(pink_lower,pink_upper), (yellow_lower, yellow_upper), (green_lower, g
 #import image
 #image = cv2.imread("TestImage.jpg")
 
+#this is a change
+
 #camera setup
 camera = PiCamera()
 camera.framerate = 24
