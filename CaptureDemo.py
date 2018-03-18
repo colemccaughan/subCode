@@ -9,8 +9,8 @@ camera.framerate = 60
 camera.resolution = [640,480]
 
 # capture parameters
-time = 5
-Hz = 15
+time = 30
+Hz = 1
 delay = 1/float(Hz)
 
 id = 0
