@@ -6,16 +6,14 @@ from picamera.array import PiRGBArray
 camera = PiCamera()
 camera.iso = 0
 camera.framerate = 60
-camera.resolution = [640,480]
+camera.resolution = [1920,1080]
+raw = PiRGBArray(camera)
 
-# capture parameters
-time = 30
-Hz = 1
-delay = 1/float(Hz)
+id = 1
 
-id = 0
-while id < (time*Hz):
- filename = "image_%d" % (id)
- camera.capture(filename, 'bgr')
- sleep(delay)
- id += 1
+sleep(0.1)
+camera.capture('CheckerBoard_%d' % id, format = 'bgr')
+sleep(2)
+camera.capture('Checkerboard_raw_%d' % id, format = 'bgr')
+
+print('Done %d') % id
